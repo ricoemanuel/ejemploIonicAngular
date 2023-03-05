@@ -1,0 +1,2 @@
+# ejemploIonic
+proyecto de muestra
