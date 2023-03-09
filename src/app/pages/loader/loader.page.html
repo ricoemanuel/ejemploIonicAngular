@@ -1,6 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Calculadora</ion-title>
+    <ion-title>
+      <ion-chip size="large">
+        Calculadora
+      </ion-chip>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
@@ -103,12 +107,18 @@
         </td>
       </tr>
       <tr>
-        <td colspan="4" class="center">
-          <ion-button color="medium" size="large" (click)="calcular()">
+        <td colspan="2">
+          <ion-button color="medium" size="large" (click)="limpiar()">
+            Limpiar
+          </ion-button>
+        </td>
+        <td colspan="2" >
+          <ion-button color="dark" size="large" (click)="calcular()">
             Calcular
           </ion-button>
         </td>
       </tr>
+      
     </table>
   </div>
 </ion-content>
