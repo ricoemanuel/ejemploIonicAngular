@@ -1,0 +1,114 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Calculadora</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <div class="calculadora">
+    <table>
+      <tr>
+        <td colspan="4">
+          <ion-item fill="outline">
+            <ion-input [(ngModel)]="ingreso" type="text" disabled id="ingreso"></ion-input>
+          </ion-item>
+        </td>
+      </tr>
+    </table>
+
+    <table>
+
+      <tr>
+        <td>
+          <ion-button fill="solid" color="warning" size="large" (click)="ponerNum('1')">
+            1
+          </ion-button>
+        </td>
+        <td>
+          <ion-button fill="solid" color="warning" size="large" (click)="ponerNum('2')">
+            2
+          </ion-button>
+        </td>
+        <td>
+          <ion-button fill="solid" color="warning" size="large" (click)="ponerNum('3')">
+            3
+          </ion-button>
+        </td>
+        <td>
+          <ion-button fill="solid" color="primary" size="large" (click)="ponerNum('+')">
+            +
+          </ion-button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ion-button fill="solid" color="warning" size="large" (click)="ponerNum('4')">
+            4
+          </ion-button>
+        </td>
+        <td>
+          <ion-button fill="solid" color="warning" size="large" (click)="ponerNum('5')">
+            5
+          </ion-button>
+        </td>
+        <td>
+          <ion-button fill="solid" color="warning" size="large" (click)="ponerNum('6')">
+            6
+          </ion-button>
+        </td>
+        <td>
+          <ion-button fill="solid" color="primary" size="large" (click)="ponerNum('-')">
+            -
+          </ion-button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <ion-button fill="solid" color="warning" size="large" (click)="ponerNum('7')">
+            7
+          </ion-button>
+        </td>
+        <td>
+          <ion-button fill="solid" color="warning" size="large" (click)="ponerNum('8')">
+            8
+          </ion-button>
+        </td>
+        <td>
+          <ion-button fill="solid" color="warning" size="large" (click)="ponerNum('9')">
+            9
+          </ion-button>
+          
+        </td>
+        <td>
+          <ion-button fill="solid" color="primary" size="large" (click)="ponerNum('*')">
+            x
+          </ion-button>
+        </td>
+      </tr>
+      <tr>
+        
+        <td >
+          <ion-button fill="solid" color="warning" size="large" (click)="ponerNum('0')">
+            0
+          </ion-button>
+        </td>
+        <td colspan="2">
+          <ion-button fill="solid" color="danger" size="large" (click)="eliminarNum()">
+            Eliminar
+          </ion-button>
+        </td>
+        <td>
+          <ion-button fill="solid" color="primary" size="large" (click)="ponerNum('/')">
+            /
+          </ion-button>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4" class="center">
+          <ion-button color="medium" size="large" (click)="calcular()">
+            Calcular
+          </ion-button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</ion-content>
